@@ -1,0 +1,14 @@
+/* Original PUNDANA theme retained; this file styles only the status chart. */
+.assignment-chart-figure { margin: 18px 0 24px; }
+.assignment-chart-visual { position: relative; width: min(100%, 280px); height: 235px; margin: 0 auto 14px; }
+.assignment-chart-visual canvas { display: block; }
+.assignment-chart-state { padding: 22px 18px; border-radius: 10px; background: #f7f4fb; color: #6b5c7b; text-align: center; font-size: 12px; line-height: 1.8; }
+.assignment-chart-source { font-size: 10px; line-height: 1.8; color: #746981; text-align: center; max-width: 360px; margin: 0 auto; }
+.progress-legend span:nth-child(3) i { background: #aab6ca; }
+@media (max-width: 650px) {
+  .assignment-chart-visual { height: 220px; max-width: 245px; }
+  .assignment-chart-source { font-size: 11px; }
+}
+
+.progress-legend span:nth-child(1) i { background: #59338c; }
+.progress-legend span:nth-child(2) i { background: #f7c74e; }

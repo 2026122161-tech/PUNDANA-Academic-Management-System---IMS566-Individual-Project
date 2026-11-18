@@ -1,0 +1,4 @@
+/* Prevent raw Vue templates from appearing while the application mounts. */
+[v-cloak] { display: none !important; }
+.assignment-notes { white-space: pre-wrap; overflow-wrap: anywhere; }
+.vue-startup-error { margin: 24px; padding: 18px; background: #fff0ed; color: #8d3d34; border: 1px solid #ebd2ce; border-radius: 10px; font-size: 14px; }

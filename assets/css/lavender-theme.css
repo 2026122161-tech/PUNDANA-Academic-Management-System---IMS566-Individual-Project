@@ -1,0 +1,256 @@
+/* Approved PUNDANA lavender theme. Presentation only; stored records are unchanged. */
+.lavender-theme { --purple: #63369a; --navy: #26304d; --muted: #6f6682; background: #f6f2fb; font-family: "Segoe UI", system-ui, sans-serif; color: #2c2846; }
+.lavender-theme .sidebar { background: #eee5f8; border-right: 1px solid #e0d2ef; padding: 31px 20px 22px; }
+.lavender-theme .brand { color: #35254c; gap: 11px; font-size: 20px; }
+.lavender-theme .brand-icon { background: #63369a; box-shadow: 0 5px 12px #6c429126; border-radius: 13px; }
+.lavender-theme .brand small { color: #806b97; font-size: 6px; letter-spacing: 1.15px; }
+.lavender-theme .nav-caption { margin: 39px 14px 17px; font-size: 9px; color: #8a729e; letter-spacing: 1.9px; }
+.lavender-theme .nav-item { font-size: 12px; color: #78638d; border-radius: 10px; padding: 13px 14px; gap: 12px; margin-bottom: 8px; min-height: 47px; }
+.lavender-theme .nav-item svg { width: 19px; height: 19px; flex-shrink: 0; }
+.lavender-theme .nav-item:hover { background: #e3d6f1; color: #5a2e88; }
+.lavender-theme .nav-item.active { background: #63369a; color: #fff; box-shadow: 0 5px 13px #63369a20; position: relative; }
+.lavender-theme .nav-item.active::after { content: ""; width: 5px; height: 5px; background: #f4cc67; border-radius: 50%; margin-left: auto; }
+.lavender-theme .sidebar-bottom { background: #ffffff61; border: 1px solid #e0d1ed; border-radius: 12px; padding: 15px 12px; margin-top: auto; gap: 11px; }
+.lavender-theme .student-avatar { background: #dcccED; color: #63369a; min-width: 35px; height: 35px; }
+.lavender-theme .sidebar-bottom strong { color: #574169; line-height: 1.65; font-size: 11px; }
+.lavender-theme .sidebar-bottom small { color: #8a759b; font-size: 10px; }
+.lavender-theme .sidebar-attribution { font-size: 9px; color: #8a759b; margin-top: 20px; line-height: 1.8; }
+.lavender-theme .dashboard-top { height: 75px; background: #fdfbff; border-bottom: 1px solid #e8dff2; color: #786585; font-size: 12px; padding: 0 37px; }
+.lavender-theme .top-left strong { color: #61487a; font-size: 12px; }
+.lavender-theme .dashboard-top time { color: #8b789c; font-size: 11px; }
+.lavender-theme #main-content { padding: 30px 36px 0; max-width: 1510px; }
+.lavender-theme .page-heading { position: relative; isolation: isolate; overflow: hidden; min-height: 186px; background: #63369a; border: 1px solid #673a9e; border-radius: 18px; padding: 29px 34px; color: white; margin-bottom: 23px; box-shadow: 0 8px 20px #63369a10; }
+.lavender-theme .page-heading::before { content: ""; position: absolute; z-index: -1; width: 320px; height: 320px; border: 1px solid #ffffff14; border-radius: 50%; right: 70px; top: -135px; box-shadow: 0 0 0 33px #ffffff04, 0 0 0 68px #ffffff03; }
+.lavender-theme .page-heading::after { content: ""; position: absolute; z-index: -1; width: 170px; height: 170px; border-radius: 50%; background: #8755af; right: -77px; bottom: -116px; }
+.lavender-theme .page-heading .eyebrow { color: #e1c9f4; font-size: 9px; letter-spacing: 1.8px; }
+.lavender-theme .page-heading h1 { font-size: 36px; color: #fff; font-weight: 700; letter-spacing: -1.15px; margin: 10px 0 8px; }
+.lavender-theme .page-heading p { color: #ddc9ef; font-size: 13px; line-height: 1.8; margin: 0; }
+.lavender-theme .hero-art { position: absolute; right: 225px; top: 43px; width: 88px; height: 88px; border: 1px solid #ffffff24; background: #ffffff0a; border-radius: 22px; display: grid; place-items: center; transform: rotate(-12deg); color: #e2c8f5; }
+.lavender-theme .hero-art svg { width: 44px; height: 44px; }
+.lavender-theme .page-heading > .btn { position: relative; z-index: 1; color: #553071; background: #f6cf6a; border: 1px solid #f6cf6a; box-shadow: 0 4px 10px #28113b15; font-size: 12px; padding: 13px 20px; min-height: 45px; border-radius: 10px; }
+.lavender-theme .page-heading > .btn:hover { background: #ffdc83; border-color: #ffdc83; }
+.lavender-theme .academic-stats { gap: 17px; margin-bottom: 25px; }
+.lavender-theme .academic-stats article { border: 1px solid #e3d0f5; background: #ede1fc; padding: 23px 24px; border-radius: 13px; box-shadow: none; position: relative; min-height: 111px; color: #63369a; }
+.lavender-theme .academic-stats article:nth-child(2) { background: #fff2ce; border-color: #f1e3b5; color: #977025; }
+.lavender-theme .academic-stats article:nth-child(3) { background: #e5edfb; border-color: #d4e1f4; color: #52739d; }
+.lavender-theme .academic-stats strong { font-size: 31px; line-height: 1.2; font-weight: 700; color: inherit; margin-bottom: 9px; letter-spacing: -.7px; }
+.lavender-theme .academic-stats span { font-size: 11px; color: inherit; opacity: .9; }
+.lavender-theme .academic-stats article::after { content: ""; position: absolute; top: 24px; right: 23px; width: 40px; height: 40px; background-color: #ffffff70; background-repeat: no-repeat; background-position: center; background-size: 23px; border-radius: 11px; }
+.lavender-theme .dashboard-card { border: 1px solid #e7dcf0; border-radius: 15px; background: #fff; padding: 26px; box-shadow: 0 4px 20px #4b266a04; }
+.lavender-theme .table-card-heading { display: flex; align-items: center; gap: 11px; margin-bottom: 23px; padding-bottom: 19px; border-bottom: 1px solid #f0e8f7; }
+.lavender-theme .table-card-heading > svg { width: 22px; height: 22px; color: #79579b; }
+.lavender-theme .table-card-heading h2 { font-size: 17px; color: #4b345e; margin: 0; font-weight: 650; }
+.lavender-theme .table-card-heading p { color: #786585; font-size: 11px; margin: 4px 0 0; }
+.lavender-theme .record-filters { gap: 20px; }
+.lavender-theme .form-label { font-size: 12px; color: #584365; font-weight: 650; margin-bottom: 9px; }
+.lavender-theme .form-control, .lavender-theme .form-select { background-color: #fcfaff; border: 1px solid #e2d4ee; color: #5a416e; border-radius: 9px; min-height: 46px; padding: 12px 14px; font-size: 12px; }
+.lavender-theme .form-select { padding-right: 35px; }
+.lavender-theme .form-control::placeholder { color: #7e6a90; }
+.lavender-theme .form-control:focus, .lavender-theme .form-select:focus { border-color: #af8bcd; box-shadow: 0 0 0 3px #63369a0c; }
+.lavender-theme .results-count { font-size: 10px; color: #786585; margin: 18px 0; }
+.lavender-theme .table-responsive { border: 1px solid #e8def0; border-radius: 10px; }
+.lavender-theme .academic-table { margin: 0; min-width: 660px; --bs-table-bg: transparent; }
+.lavender-theme .academic-table th { font-size: 10px; color: #705387; font-weight: 650; background: #eee5f7; padding: 14px; border-bottom: 1px solid #e5d6ef; }
+.lavender-theme .academic-table td { color: #5e466f; font-size: 12px; padding: 19px 14px; vertical-align: middle; line-height: 1.6; border-color: #f0e8f6; }
+.lavender-theme .academic-table tbody tr:last-child td { border-bottom: 0; }
+.lavender-theme .academic-table tbody tr:hover { background: #fbf7ff; }
+.lavender-theme .academic-table td:first-child { color: #7949a4; font-weight: 650; }
+.lavender-theme .academic-table td:first-child::first-line { background: #f4eafa; }
+.lavender-theme .academic-table td:nth-child(2) { color: #4e365f; font-weight: 550; }
+.lavender-theme .academic-table small { color: #786585; font-size: 10px; font-weight: 400; margin-top: 5px; line-height: 1.7; }
+.lavender-theme .row-actions .btn { border-radius: 7px; font-size: 10px; min-height: 32px; padding: 6px 10px; }
+.lavender-theme .btn-outline-primary { border-color: #d8c5e8; background: #f7f0fd; color: #82569f; }
+.lavender-theme .btn-outline-danger { border-color: #edd3db; background: #fff8fa; color: #bf778b; }
+.lavender-theme footer { color: #786585; font-size: 9px; line-height: 1.9; padding: 27px 5px; }
+.lavender-theme dialog { border: 1px solid #e0d0ee; border-radius: 16px; color: #4e3564; box-shadow: 0 20px 70px #3e215a26; }
+.lavender-theme dialog::backdrop { background: #3e245b66; }
+.lavender-theme dialog h2 { color: #5b3679; font-size: 25px; }
+
+
+@media (max-width: 1150px) { .lavender-theme .hero-art { display: none; } }
+@media (max-width: 960px) {
+ .lavender-theme .sidebar { display: none; top: 68px; width: 260px; box-shadow: 10px 0 35px #43245422; }
+ .lavender-theme .sidebar.open { display: flex; }
+ .lavender-theme .dashboard-shell { margin-left: 0; }
+ .lavender-theme .dashboard-top { height: 68px; padding: 0 24px; position: sticky; top: 0; z-index: 25; gap: 10px; }
+ .lavender-theme #menu-toggle { display: block; color: #63369a; border-radius: 8px; padding: 0 7px; border: 1px solid #e2d4ef; background: #f4edf9; }
+ .lavender-theme #main-content { padding: 25px 24px 0; }
+ .lavender-theme .page-heading { padding: 28px; }
+}
+@media (max-width: 650px) {
+ .lavender-theme .page-heading { min-height: 210px; align-items: flex-start; flex-direction: column; gap: 22px; padding: 27px; }
+ .lavender-theme .page-heading h1 { font-size: 32px; }
+ .lavender-theme .academic-stats { gap: 10px; }
+ .lavender-theme .academic-stats article { padding: 20px 17px; min-width: 100%; min-height: 100px; }
+ .lavender-theme .dashboard-card { padding: 20px; }
+ .lavender-theme .record-filters > div { min-width: 100%; }
+ .lavender-theme .form-control, .lavender-theme .form-select { font-size: 16px; }
+ .lavender-theme .row-actions .btn { min-height: 40px; }
+ 
+ .lavender-theme .dashboard-top time { display: none; }
+}
+
+.lavender-theme .academic-stats article:nth-child(1)::after { background-image: url("data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2377509b%22%20stroke-width%3D%221.65%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M12%205v16M3%204c4-1%206%200%209%202%203-2%205-3%209-2v15c-4-1-6%200-9%202-3-2-5-3-9-2z%22%2F%3E%3C%2Fsvg%3E"); }
+
+.lavender-theme .academic-stats article:nth-child(2)::after { background-image: url("data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23a47d30%22%20stroke-width%3D%221.65%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22m2%209%2010-5%2010%205-10%205-10-5zm4%202v6c4%203%208%203%2012%200v-6m4-2v8%22%2F%3E%3C%2Fsvg%3E"); }
+
+.lavender-theme .academic-stats article:nth-child(3)::after { background-image: url("data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%236387ad%22%20stroke-width%3D%221.65%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20aria-hidden%3D%22true%22%3E%3Crect%20x%3D%223%22%20y%3D%225%22%20width%3D%2218%22%20height%3D%2216%22%20rx%3D%223%22%2F%3E%3Cpath%20d%3D%22M7%203v4m10-4v4M3%2011h18m-13%205h2m4%200h2%22%2F%3E%3C%2Fsvg%3E"); }
+
+.lavender-theme .subject-code-badge { display: inline-block; color: #78469f; background: #f0e4fa; border: 1px solid #e6d4f3; border-radius: 6px; padding: 5px 9px; font-size: 11px; letter-spacing: .2px; }
+
+/* Shared workspace refinements using the approved My Subjects palette. */
+.lavender-theme { font-size: 14px; }
+.lavender-theme .page-heading > div:first-child { position: relative; z-index: 1; max-width: 68%; }
+.lavender-theme .page-heading > div:first-child p { max-width: 64ch; }
+.lavender-theme .workspace-pill { background: #ffffff14; color: #ead8f8; border: 1px solid #ffffff24; position: relative; z-index: 1; }
+.lavender-theme .nav-item { text-decoration: none; }
+.lavender-theme .nav-item svg, .lavender-theme #menu-toggle svg { width: 19px; height: 19px; flex-shrink: 0; }
+.lavender-theme .signout { display: flex; align-items: center; justify-content: center; gap: 9px; margin-top: 13px; min-height: 41px; font-size: 11px; border: 1px solid #d5c2e7; color: #77548e; background: #ffffff50; border-radius: 9px; }
+.lavender-theme .signout:hover { background: #e2d5ef; }
+.lavender-theme .signout svg { width: 16px; height: 16px; }
+.lavender-theme .academic-stats article:nth-child(4) { background: #e4f3ed; border-color: #d2e7dd; color: #4e806d; }
+.lavender-theme .academic-stats article:nth-child(4)::after { background-image: none; }
+.lavender-theme .form-hint, .lavender-theme .results-count { color: #7b6889; font-size: 11px; line-height: 1.8; }
+.lavender-theme .academic-table td { font-size: 13px; }
+.lavender-theme .academic-table th { font-size: 11px; }
+.lavender-theme .row-actions .btn { font-size: 11px; }
+.lavender-theme .status-badge { background: #eee2fa; color: #754593; border: 1px solid #e4d0f3; border-radius: 6px; font-size: 11px; padding: 5px 9px; }
+.lavender-theme .status-badge.doing { background: #fff3cc; color: #896521; border-color: #efe0ad; }
+.lavender-theme .status-badge.done { background: #e6f3eb; color: #46775c; border-color: #d3e8db; }
+.lavender-theme .overdue-text { color: #ac4c5e; font-size: 11px; }
+.lavender-theme .academic-table tr:hover { background: #fbf7ff; }
+.lavender-theme .empty-state { background: #faf6fe; border: 1px dashed #e4d5ef; border-radius: 12px; margin-top: 12px; }
+.lavender-theme .empty-state strong { font-size: 13px; color: #725588; }
+.lavender-theme .empty-state p { font-size: 11px; color: #857091; }
+.lavender-theme .empty-symbol { background: #eee3f8; color: #986cb6; }
+.lavender-theme .btn-primary { background: #63369a; border-color: #63369a; border-radius: 9px; }
+.lavender-theme .btn-primary:hover { background: #532680; border-color: #532680; }
+.lavender-theme .page-heading > .btn { background: #f6cf6a; color: #553071; border-color: #f6cf6a; }
+.lavender-theme .page-heading > .btn:hover { background: #ffdc83; border-color: #ffdc83; }
+.lavender-theme .dashboard-grid { gap: 22px; }
+.lavender-theme .section-heading .eyebrow { font-size: 9px; color: #9876af; }
+.lavender-theme .section-heading h2 { color: #543a69; font-size: 19px; letter-spacing: -.3px; }
+.lavender-theme .count-badge { color: #8557a3; background: #f1e5fb; border-radius: 7px; }
+.lavender-theme .record-row { border-color: #eee4f5; padding: 16px 0; }
+.lavender-theme .record-row h3 { color: #60436f; font-size: 13px; line-height: 1.7; }
+.lavender-theme .record-row p { font-size: 11px; color: #857091; }
+.lavender-theme .record-row .record-date { color: #886a9b; font-size: 11px; }
+.lavender-theme .record-date.overdue { color: #ac4c5e; }
+.lavender-theme .record-date .status { font-size: 10px; }
+.lavender-theme .dashboard-semester { font-size: 11px; padding: 6px 28px 6px 9px; min-height: 34px; }
+.lavender-theme .tiny-tag { color: #8b6d9d; background: #f3ebf9; font-size: 10px; }
+.lavender-theme .dashboard-hero, .lavender-theme .profile-banner { border-radius: 18px; border: 1px solid #70449c; background: linear-gradient(90deg,#4e267cf0,#63369ab8),url('../images/uitm-puncak-perdana.png') center 38%/cover; }
+.lavender-theme .dashboard-hero h2 { line-height: 1.4; font-size: 27px; }
+.lavender-theme .dashboard-hero p { color: #e3d2ef; font-size: 13px; }
+.lavender-theme .hero-link { background: #f6cf6a; color: #553071; font-size: 11px; border-radius: 8px; }
+.lavender-theme .summary-grid { gap: 17px; }
+.lavender-theme .stat-card { background: #ede1fc; border: 1px solid #e3d0f5; border-radius: 13px; color: #63369a; box-shadow: none; }
+.lavender-theme .stat-card:nth-child(2) { background: #fff2ce; border-color: #f1e3b5; color: #977025; }
+.lavender-theme .stat-card:nth-child(3) { background: #e5edfb; border-color: #d4e1f4; color: #52739d; }
+.lavender-theme .stat-card:nth-child(4) { background: #e4f3ed; border-color: #d2e7dd; color: #4e806d; }
+.lavender-theme .stat-card > strong { color: inherit; font-size: 31px; }
+.lavender-theme .stat-label, .lavender-theme .stat-card > small { color: inherit; font-size: 11px; }
+.lavender-theme .stat-card > small { font-size: 10px; opacity: .85; }
+.lavender-theme .stat-icon, .lavender-theme .stat-icon.yellow, .lavender-theme .stat-icon.blue, .lavender-theme .stat-icon.green { color: inherit; background: #ffffff70; border-radius: 9px; }
+.lavender-theme .stat-icon svg { width: 17px; height: 17px; }
+.lavender-theme.theme-dashboard .page-heading, .lavender-theme.theme-profile .page-heading { min-height: 0; padding: 0; background: transparent; border: 0; box-shadow: none; color: #2c2846; overflow: visible; }
+.lavender-theme.theme-dashboard .page-heading h1, .lavender-theme.theme-profile .page-heading h1 { color: #3d2d52; font-size: 31px; }
+.lavender-theme.theme-dashboard .page-heading .eyebrow, .lavender-theme.theme-profile .page-heading .eyebrow { color: #8557a3; }
+.lavender-theme.theme-dashboard .page-heading p, .lavender-theme.theme-profile .page-heading p { color: #7b668a; }
+.lavender-theme.theme-dashboard .page-heading::before, .lavender-theme.theme-dashboard .page-heading::after, .lavender-theme.theme-profile .page-heading::before, .lavender-theme.theme-profile .page-heading::after { display: none; }
+.lavender-theme.theme-dashboard .workspace-pill { color: #8a62a4; background: #eee3f8; border-color: #e5d6ef; }
+.lavender-theme .quick-card > p { color: #897397; font-size: 12px; }
+.lavender-theme .quick-grid a { background: #f7f0fd; border-color: #e5d4f1; color: #825c9c; font-size: 11px; border-radius: 9px; min-height: 45px; }
+.lavender-theme .quick-grid a:hover { background: #eee1fa; }
+.lavender-theme .progress { background: #eee3f7; }
+.lavender-theme .progress-bar { background: #7545a5; }
+.lavender-theme .progress-overview strong { color: #68428b; }
+.lavender-theme .progress-overview span, .lavender-theme .progress-legend span { color: #8e769f; font-size: 11px; }
+.lavender-theme .assignment-chart-state { background: #f6effc; color: #897198; }
+.lavender-theme .assignment-chart-source { color: #8c769d; }
+.lavender-theme .day-column { background: #f7f1fc; border: 1px solid #e8daf3; border-radius: 11px; }
+.lavender-theme .day-column.today { background: #eee1fa; border-color: #b58bd2; }
+.lavender-theme .day-column > h2 { color: #705083; font-size: 13px; }
+.lavender-theme .today-label { color: #93653a; background: #fff0bf; border-radius: 5px; padding: 3px 5px; }
+.lavender-theme .day-empty { color: #80658e; font-size: 11px; }
+.lavender-theme .class-block { border-radius: 9px; border-color: #e7daef; border-left: 4px solid var(--subject-color,#9965b9); box-shadow: 0 3px 12px #683b9005; padding: 14px; }
+.lavender-theme .class-block h3 { font-size: 13px; color: #795096; }
+.lavender-theme .class-block p { font-size: 11px; color: #8d759a; }
+.lavender-theme .class-block time { color: #7d6094; font-size: 11px; }
+.lavender-theme .class-block .btn { font-size: 10px; }
+.lavender-theme .history-card h2 { color: #60416f; }
+.lavender-theme .formula { background: #f3ebfa; border-left: 3px solid #b18acb; color: #826094; font-size: 12px; line-height: 1.9; }
+.lavender-theme .grade-choice { font-size: 12px; padding: 9px 28px 9px 10px; min-height: 40px; }
+.lavender-theme .grade-scale span { background: #eee1fa; color: #805497; font-size: 11px; border-radius: 7px; }
+.lavender-theme details summary { color: #86629a; }
+.lavender-theme .calendar-weekdays { color: #977aa9; font-size: 10px; }
+.lavender-theme .calendar-day { background: #fcf9ff; border-color: #e9ddf2; border-radius: 9px; }
+.lavender-theme .calendar-day.selected { background: #63369a; color: #fff; border-color: #63369a; }
+.lavender-theme .calendar-day.today { box-shadow: inset 0 0 0 1px #e8c464; border-color: #e8c464; }
+.lavender-theme .calendar-day.outside { background: #f6f2fa; color: #877492; }
+.lavender-theme .calendar-day .event-count { color: #80658e; }
+.lavender-theme .calendar-day.selected .event-count { color: #e4c9f7; }
+.lavender-theme .calendar-legend { color: #8e799e; }
+.lavender-theme .month-navigation h2, .lavender-theme .selected-events h2 { color: #624373; }
+.lavender-theme .event-card { border-color: #eee4f4; }
+.lavender-theme .event-card h3 { color: #6d4d7f; font-size: 14px; }
+.lavender-theme .event-card p { color: #8c759a; font-size: 11px; }
+.lavender-theme .event-card .event-type { color: #80658e; font-size: 10px; }
+.lavender-theme .event-card p.overdue-text { color: #ac4c5e; }
+.lavender-theme .month-event-button { color: #7b5890; border-color: #eee4f5; font-size: 13px; }
+.lavender-theme .month-event-button:hover { background: #fcf9ff; }
+.lavender-theme .profile-avatar { background: #f6cf6a; color: #664179; border: 3px solid #ffffff38; }
+.lavender-theme .profile-layout h2 { color: #624373; }
+.lavender-theme .profile-details dt { color: #80658e; font-size: 11px; }
+.lavender-theme .profile-details dd { color: #6c4c7e; font-size: 14px; }
+.lavender-theme .profile-links a { background: #f5edfb; color: #815797; border: 1px solid #e8d7f2; font-size: 12px; border-radius: 9px; }
+.lavender-theme .profile-links a:hover { background: #eee1f8; }
+.lavender-theme .form-check-label { font-size: 12px; }
+.lavender-theme :focus-visible { outline: 3px solid #c89724; outline-offset: 3px; }
+@media (max-width: 1300px) {
+ .lavender-theme .summary-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+ .lavender-theme .performance-layout, .lavender-theme .calendar-layout { grid-template-columns: minmax(0,1fr); }
+}
+@media (min-width: 1600px) { .lavender-theme .schedule:not(.daily) { grid-template-columns: repeat(7,minmax(0,1fr)); } }
+@media (min-width: 961px) and (max-width: 1599px) { .lavender-theme .schedule:not(.daily) { grid-template-columns: repeat(2,minmax(0,1fr)); overflow: visible; } }
+@media (max-width: 960px) {
+ .lavender-theme .dashboard-grid { grid-template-columns: minmax(0,1fr); }
+ .lavender-theme .schedule:not(.daily) { grid-template-columns: repeat(2,minmax(0,1fr)); overflow: visible; }
+ .lavender-theme .sidebar-bottom strong { max-width: 150px; }
+}
+@media (max-width: 650px) {
+ .lavender-theme .page-heading > div:first-child { max-width: 100%; }
+ .lavender-theme .academic-stats article { min-width: calc(50% - 6px); }
+ .lavender-theme .academic-stats article::after { width: 30px; height: 30px; background-size: 18px; top: 20px; right: 14px; }
+ .lavender-theme .summary-grid { gap: 10px; }
+ .lavender-theme .stat-card { padding: 19px 14px; }
+ .lavender-theme .stat-label { font-size: 10px; }
+ .lavender-theme .stat-card > small { font-size: 10px; }
+ .lavender-theme .schedule:not(.daily), .lavender-theme .profile-layout { grid-template-columns: minmax(0,1fr); }
+ .lavender-theme .row-actions .btn { min-height: 40px; }
+ .lavender-theme .calendar-grid, .lavender-theme .calendar-weekdays { gap: 4px; }
+ .lavender-theme .calendar-day { min-height: 69px; }
+ .lavender-theme .form-control, .lavender-theme .form-select { font-size: 16px; }
+ .lavender-theme .grade-choice { font-size: 13px; }
+ .lavender-theme .profile-banner { align-items: flex-start; flex-direction: column; }
+ .lavender-theme .profile-banner h2 { font-size: 23px; }
+ .lavender-theme dialog { padding: 26px 21px; max-height: calc(100dvh - 30px); overflow-y: auto; }
+ .lavender-theme .preview-notice { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .lavender-theme *, .lavender-theme *::before, .lavender-theme *::after { transition: none!important; scroll-behavior: auto!important; } }
+/* Authentication uses the same lavender palette around the supplied campus photo. */
+.lavender-auth { --purple:#63369a; --navy:#35254c; background:#f6f2fb; }
+.lavender-auth .auth-layout { background:#f6f2fb; }
+.lavender-auth .form-panel { background:#f6f2fb; }
+.lavender-auth .brand { color:#35254c; }
+.lavender-auth .brand-icon { background:#63369a; }
+.lavender-auth .form-content h1 { color:#4f2d6b; }
+.lavender-auth .form-label { color:#664778; }
+.lavender-auth .form-control { background:#fdfbff; border-color:#ddcceb; border-radius:9px; }
+.lavender-auth .form-control:focus { border-color:#af8bcd; box-shadow:0 0 0 3px #63369a0e; }
+.lavender-auth .btn-primary { background:#63369a; border-color:#63369a; border-radius:9px; }
+.lavender-auth .btn-primary:hover { background:#532680; border-color:#532680; }
+.lavender-auth .demo-note { background:#eee1fa; border-color:#ddc9ed; border-radius:11px; }
+.lavender-auth .demo-note strong { color:#71468e; }
+.lavender-auth .demo-note p { color:#89689d; }
+.lavender-auth .campus { background-image:linear-gradient(180deg,#30164c1a,#4c26734d 40%,#2f174bef),url('../images/uitm-puncak-perdana.png'); }

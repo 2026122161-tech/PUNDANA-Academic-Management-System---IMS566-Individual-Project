@@ -1,0 +1,21 @@
+/* Meaningful semester comparison, matching the approved lavender theme. */
+.gpa-chart-card { margin-bottom: 24px; }
+.gpa-scale-note { color: #7b618c; background: #f2e8fa; border: 1px solid #e5d4f0; border-radius: 7px; padding: 6px 9px; font-size: 10px; white-space: nowrap; }
+.gpa-chart-description, .gpa-chart-caption { color: #7b6889; font-size: 11px; line-height: 1.9; }
+.gpa-chart-description { margin: 0 0 17px; }
+.gpa-chart-caption { margin: 14px 0 18px; }
+.gpa-chart-scroll { overflow-x: auto; overflow-y: hidden; width: 100%; }
+.gpa-chart-plot { position: relative; height: 290px; width: 100%; min-width: 320px; }
+.gpa-chart-state { padding: 22px 18px; background: #f6effb; color: #775b8b; border-radius: 10px; font-size: 12px; line-height: 1.8; text-align: center; }
+.gpa-chart-legend { display: flex; flex-wrap: wrap; gap: 10px 20px; margin-top: 17px; font-size: 10px; color: #7b6889; }
+.gpa-chart-legend i { display: inline-block; width: 9px; height: 9px; margin-right: 7px; border-radius: 3px; }
+.gpa-complete { background: #7545a5; }
+.gpa-provisional { background: #e7ba50; }
+.gpa-data-table { margin-bottom: 0; min-width: 430px; --bs-table-bg: transparent; }
+.gpa-data-table th { background: #f1e7f9; color: #705387; border-color: #e9def2; font-size: 10px; padding: 12px 14px; }
+.gpa-data-table td { color: #6b507b; border-color: #eee5f5; font-size: 11px; padding: 12px 14px; }
+.gpa-data-table tr:last-child td { border-bottom: 0; }
+.gpa-data-table tr.is-selected { background: #faf5ff; }
+.gpa-data-table tr.is-selected th { background: #ede0f8; }
+.gpa-data-table tbody th { font-size: 11px; font-weight: 550; background: transparent; }
+@media (max-width: 650px) { .gpa-chart-plot { height: 260px; } .gpa-scale-note { font-size: 9px; } .gpa-chart-card .section-heading { align-items: flex-start; flex-wrap: wrap; } }
