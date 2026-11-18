@@ -32,7 +32,7 @@ Assignment Tracker uses the locally bundled Vue.js 3.5.24 runtime, alongside the
 
 Implementation: `assets/js/assignments-vue.js`; page template: `assignments.html`; local runtime and license: `assets/vendor/vue.global.prod.js` and `Vue-LICENSE.txt`. No npm, build step or internet connection is needed to run the page. Subjects and other pages retain their existing scripts.
 
-To test: sign in as `lecturer` with password `Pundana123`, open Assignment Tracker, search for Literature, try subject/status filters, then add a temporary assignment. Edit its status and check the Dashboard summary; cancel deletion once, then delete the temporary record. Reload to confirm persistence. The lecturer demo includes the three supplied real assignments. Use the same browser and localhost address to retain changes.
+To test: sign in as `Lecturer` with password `Pundana123`, open Assignment Tracker, search for Literature, try subject/status filters, then add a temporary assignment. Edit its status and check the Dashboard summary; cancel deletion once, then delete the temporary record. Reload to confirm persistence. The lecturer demo includes the three supplied real assignments. Use the same browser and localhost address to retain changes.
 
 ## Available pages
 - Login and Registration: validation, salted password hashes, browser-only sign-in, optional remembered sessions and sign-out.
@@ -136,3 +136,15 @@ The lecturer demo uses TFC451 Introductory French (Level II) in place of Mandari
 The lecturer demo uses the supplied eight-course list in English. IMS563 is Data and Information Visualisation, and TFC451 is Introductory French (Level II). Existing credits and semester labels are retained. CTU554 uses 2 credits and semester 4.
 
 The provided real assignments are CTU554 on 4 November 2026 (Completed), IMS564 Literature Survey on 13 November 2026 (Completed), and IMS564 Individual Assignment – User Experience Design on 25 November 2026 (In progress, Week 9). The supplied dates use 2026. Demo login applies this revision once and preserves subsequent edits. Other pre-existing demonstration information, such as timetable and grade examples, remains illustrative.
+
+## Editable starting content
+
+Login: **Lecturer** / **Pundana123**. Profile starts as Lecturer, student ID Lecturer, email lecturer.demo@gmail.com. Supplied subjects and real assignments are retained. Timetable sessions follow the supplied timetable screenshot. Grades/CGPA baseline and custom calendar events are illustrative starting examples, not official university results or events. All can be edited through the interface. Starter data is saved once per browser; later edits and deletions persist. Existing populated collections are preserved. To see the complete initial dataset without affecting your existing browser data, test in a fresh browser profile.
+
+## Timetable update
+
+The supplied weekly timetable replaces the previous lecturer account timetable once on next login. Later edits and deletions persist. Thursday has no classes. All eight supplied subjects, including TFC451, are in Semester 4. Existing lecturer accounts move TFC451 from Semester 3 once on login, preserving its classes and grades. Locations are translated into English. Total weekly contact hours for Semester 4: 22.
+
+## Authentication page logo
+
+Login and Registration display the UiTM logo alongside PUNDANA and a clear independent-project attribution. The unchanged logo was downloaded from the UiTM library repository: https://iknow.library.uitm.edu.my/71/ . Source details are bundled in assets/images/uitm-logo-source.txt.
