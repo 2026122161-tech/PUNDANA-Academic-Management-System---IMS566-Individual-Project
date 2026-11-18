@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="PUNDANA — an independent IMS566 student academic management project.">
+<title>Create account | PUNDANA</title>
+<link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/auth.js" defer>
+</script>
+<script src="assets/js/pages.js" defer>
+</script>
+<link rel="stylesheet" href="assets/css/lavender-theme.css">
+<script defer src="assets/js/lavender-theme.js">
+</script>
+</head>
+<body class="lavender-auth">
+<main class="auth-layout">
+<aside class="campus">
+<div class="campus-top">
+<span class="eyebrow">YOUR CAMPUS. YOUR JOURNEY.</span>
+<span class="location">Puncak Perdana, Selangor</span>
+</div>
+<div class="campus-copy">
+<span class="yellow-rule">
+</span>
+<h2>Your academic life,<br>
+<em>organised.</em>
+</h2>
+<p>A little clarity for every class, deadline<br>and milestone ahead.</p>
+<div class="campus-tags">
+<span>Plan with purpose</span>
+<span>Grow with confidence</span>
+</div>
+</div>
+<div class="photo-credit">UiTM Puncak Perdana · Photograph supplied by project owner</div>
+</aside>
+<section class="form-panel">
+<a class="brand" href="index.html">
+<span class="brand-icon">P<span>◆</span>
+</span>
+<span>PUNDANA<small>ACADEMIC MANAGEMENT SYSTEM</small>
+</span>
+</a>
+<div class="form-content">
+<span class="eyebrow purple">YOUR NEXT CHAPTER STARTS HERE</span>
+<h1>Make it yours.</h1>
+<p class="intro">Create your student account to get organised.</p>
+<div id="feedback" role="status" aria-live="polite" hidden>
+</div>
+<form id="register-form">
+<div class="row g-3">
+<div class="col-12">
+<label for="fullName" class="form-label">Full name</label>
+<input class="form-control" id="fullName" name="fullName" autocomplete="name" required minlength="2" maxlength="80" placeholder="Your full name">
+</div>
+<div class="col-sm-6">
+<label for="studentId" class="form-label">Student ID</label>
+<input class="form-control" id="studentId" name="studentId" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" required placeholder="10-digit student ID" aria-describedby="id-help">
+<small id="id-help">Use 10 digits for this demo.</small>
+</div>
+<div class="col-sm-6">
+<label for="email" class="form-label">Email address</label>
+<input class="form-control" id="email" name="email" type="email" autocomplete="email" maxlength="254" required placeholder="you@example.com">
+</div>
+<div class="col-12">
+<label for="password" class="form-label">Password</label>
+<div class="password-wrap">
+<input class="form-control" id="password" name="password" type="password" autocomplete="new-password" required minlength="8" maxlength="128">
+<button type="button" class="reveal" data-toggle="password" aria-controls="password" aria-pressed="false" aria-label="Show password">Show</button>
+</div>
+<small>8–128 characters, including a letter and a number.</small>
+</div>
+<div class="col-12">
+<label for="confirmPassword" class="form-label">Confirm password</label>
+<div class="password-wrap">
+<input class="form-control" id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" required minlength="8" maxlength="128">
+<button type="button" class="reveal" data-toggle="confirmPassword" aria-controls="confirmPassword" aria-pressed="false" aria-label="Show confirm password">Show</button>
+</div>
+</div>
+</div>
+<div class="form-check my-4">
+<input class="form-check-input" id="consent" type="checkbox" required>
+<label class="form-check-label" for="consent">I understand this is a student demo and my account is stored on this browser.</label>
+</div>
+<button class="btn btn-primary w-100" type="submit">Create account <span aria-hidden="true">↗</span>
+</button>
+</form>
+<p class="switch">Already have an account? <a href="index.html">Sign in</a>
+</p>
+</div>
+<footer>IMS566 · Independent student project<br>Inspired by UiTM. Not an official UiTM system.</footer>
+</section>
+</main>
+</body>
+</html>

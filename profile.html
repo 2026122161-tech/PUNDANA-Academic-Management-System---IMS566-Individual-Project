@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Student Profile | PUNDANA</title>
+<link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/dashboard.css">
+<link rel="stylesheet" href="assets/css/academic.css">
+<link rel="stylesheet" href="assets/css/tools.css">
+<link rel="stylesheet" href="assets/css/calendar-profile.css">
+<script defer src="assets/js/auth.js">
+</script>
+<script defer src="assets/js/dashboard-data.js">
+</script>
+<script defer src="assets/js/calendar-data.js">
+</script>
+<script defer src="assets/js/workspace.js">
+</script>
+<script defer src="assets/js/profile.js">
+</script>
+<link rel="stylesheet" href="assets/css/lavender-theme.css">
+<script defer src="assets/js/lavender-theme.js">
+</script>
+</head>
+<body class="dashboard-body lavender-theme theme-profile">
+<a class="skip-link" href="#main-content">Skip to profile</a>
+<div id="protected-content" hidden>
+<aside class="sidebar" id="sidebar">
+<a class="brand" href="dashboard.html">
+<span class="brand-icon">P<span>◆</span>
+</span>
+<span>PUNDANA<small>ACADEMIC MANAGEMENT SYSTEM</small>
+</span>
+</a>
+<p class="nav-caption">MY WORKSPACE</p>
+<nav aria-label="Main navigation">
+<a class="nav-item" href="dashboard.html">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+<rect x="3" y="3" width="7" height="7" rx="2"/>
+<rect x="14" y="3" width="7" height="7" rx="2"/>
+<rect x="3" y="14" width="7" height="7" rx="2"/>
+<rect x="14" y="14" width="7" height="7" rx="2"/>
+</svg>Dashboard</a>
+<a type="button" class="nav-item" href="subjects.html">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+<path d="M12 5v16M3 4c4-1 6 0 9 2 3-2 5-3 9-2v15c-4-1-6 0-9 2-3-2-5-3-9-2z"/>
+</svg>My Subjects</a>
+<a type="button" class="nav-item" href="assignments.html">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+<rect x="5" y="4" width="14" height="17" rx="2"/>
+<path d="M9 4V2h6v2m-7 8 3 3 5-6"/>
+</svg>Assignment Tracker</a>
+<a type="button" class="nav-item" href="timetable.html">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+<rect x="3" y="5" width="18" height="16" rx="3"/>
+<path d="M7 3v4m10-4v4M3 11h18m-13 5h2m4 0h2"/>
+</svg>Class Timetable</a>
+<a type="button" class="nav-item" href="performance.html">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+<path d="M4 3v18h17m-13-5 4-5 4 2 5-7"/>
+</svg>Academic Performance</a>
+<a type="button" class="nav-item" href="calendar.html">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+<rect x="3" y="5" width="18" height="16" rx="3"/>
+<path d="M7 3v4m10-4v4M3 11h18m-13 5h2m4 0h2"/>
+</svg>Academic Calendar
+</a>
+<a type="button" class="nav-item active" aria-current="page" href="profile.html">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+<circle cx="12" cy="8" r="4"/>
+<path d="M4 21v-2a8 8 0 0 1 16 0v2"/>
+</svg>Student Profile
+</a>
+</nav>
+<div class="sidebar-bottom">
+<span class="student-avatar" id="avatar">P</span>
+<div>
+<strong id="sidebar-name">
+</strong>
+<small id="account-id">
+</small>
+</div>
+</div>
+<button id="logout" class="signout">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+<path d="M9 4H4v16h5m5-12 4 4-4 4m-5-4h12"/>
+</svg>
+<span>Sign out</span>
+</button>
+<p class="sidebar-attribution">IMS566 · Independent student project<br>Not an official UiTM system.</p>
+</aside>
+<div class="dashboard-shell">
+<header class="dashboard-top">
+<div class="top-left">
+<button id="menu-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Toggle navigation">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+<path d="M4 6h16M4 12h16M4 18h16"/>
+</svg>
+</button>
+<span>My workspace <span class="breadcrumb-sep">/</span> <strong>Student Profile</strong>
+</span>
+</div>
+<time id="today-date">
+</time>
+</header>
+<main id="main-content" tabindex="-1">
+<div class="page-heading">
+<div>
+<span class="eyebrow purple">YOUR JOURNEY, YOUR DETAILS</span>
+<h1>Student Profile</h1>
+<p>A personal home for your academic information.</p>
+</div>
+<button id="edit-profile" class="btn btn-primary">Edit profile</button>
+</div>
+<p id="notice" role="status" aria-live="polite" hidden>
+</p>
+<section class="profile-banner">
+<span class="profile-avatar" id="profile-initials">
+</span>
+<div>
+<span class="eyebrow">PUNDANA STUDENT WORKSPACE</span>
+<h2 id="profile-name">
+</h2>
+<p id="profile-student-id">
+</p>
+</div>
+</section>
+<div class="academic-stats mt-4" id="stats">
+</div>
+<div class="profile-layout">
+<section class="dashboard-card">
+<span class="eyebrow purple">THE BASICS</span>
+<h2>Personal information</h2>
+<dl class="profile-details">
+<dt>Full name</dt>
+<dd id="view-name">
+</dd>
+<dt>Student ID</dt>
+<dd id="view-student-id">
+</dd>
+<dt>Email address</dt>
+<dd id="view-email">
+</dd>
+<dt>Account created</dt>
+<dd id="view-created">
+</dd>
+<dt>Last profile update</dt>
+<dd id="view-updated">
+</dd>
+</dl>
+</section>
+<section class="dashboard-card">
+<span class="eyebrow purple">YOUR ACADEMIC PATH</span>
+<h2>Academic information</h2>
+<dl class="profile-details">
+<dt>Programme / course</dt>
+<dd id="view-programme">
+</dd>
+<dt>Faculty</dt>
+<dd id="view-faculty">
+</dd>
+<dt>Current semester</dt>
+<dd id="view-semester">
+</dd>
+<dt>Campus inspiration</dt>
+<dd>UiTM Puncak Perdana</dd>
+</dl>
+<p class="form-hint">These details are entered by you. This project does not verify enrolment or access university records.</p>
+</section>
+</div>
+<section class="dashboard-card mt-4">
+<h2>Your workspace, together</h2>
+<p class="form-hint">Your subjects, coursework, classes and events stay connected to this account.</p>
+<div class="profile-links">
+<a href="subjects.html">My Subjects ↗</a>
+<a href="assignments.html">Assignment Tracker ↗</a>
+<a href="timetable.html">Class Timetable ↗</a>
+<a href="performance.html">Academic Performance ↗</a>
+<a href="calendar.html">Academic Calendar ↗</a>
+</div>
+</section>
+<footer>IMS566 · Independent student project · Not an official UiTM system.<br>Your records are stored on this browser for your signed-in account.</footer>
+</main>
+</div>
+</div>
+<dialog id="profile-dialog" aria-labelledby="profile-title">
+<form id="profile-form">
+<h2 id="profile-title">Edit student profile</h2>
+<p id="profile-error" role="alert" hidden>
+</p>
+<div class="row g-3">
+<div class="col-sm-6">
+<label for="fullName" class="form-label">Full name</label>
+<input id="fullName" name="fullName" type="text" class="form-control" required minlength="2" maxlength="80">
+</div>
+<div class="col-sm-6">
+<label for="email" class="form-label">Email address</label>
+<input id="email" name="email" type="email" class="form-control" required maxlength="254">
+</div>
+<div class="col-sm-6">
+<label for="programme" class="form-label">Programme / course</label>
+<input id="programme" name="programme" type="text" class="form-control" maxlength="120" placeholder="e.g. Information Systems Management">
+</div>
+<div class="col-sm-6">
+<label for="faculty" class="form-label">Faculty</label>
+<input id="faculty" name="faculty" type="text" class="form-control" maxlength="120" placeholder="Your faculty">
+</div>
+<div class="col-sm-6">
+<label for="currentSemester" class="form-label">Current semester</label>
+<input id="currentSemester" name="currentSemester" type="text" class="form-control" maxlength="40" placeholder="e.g. 4">
+</div>
+</div>
+<p class="form-hint">Student ID stays unchanged. A new email becomes your sign-in email; your password and academic records remain the same. Profile semester is descriptive and does not move subjects or timetable records.</p>
+<div class="dialog-actions">
+<button id="cancel-profile" type="button" class="btn btn-outline-primary">Cancel</button>
+<button type="submit" class="btn btn-primary">Save profile</button>
+</div>
+</form>
+</dialog>
+<dialog id="module-dialog" aria-labelledby="module-title">
+<button id="dialog-close" aria-label="Close dialog">×</button>
+<span class="eyebrow purple">NEXT DEVELOPMENT PHASE</span>
+<h2 id="module-title">
+</h2>
+<p id="module-description">
+</p>
+<p class="module-status">This module is planned. The dashboard is ready to display its records when it is connected.</p>
+<button id="dialog-done" class="btn btn-primary">Back to dashboard</button>
+</dialog>
+</body>
+</html>

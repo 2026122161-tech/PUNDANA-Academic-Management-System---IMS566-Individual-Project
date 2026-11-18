@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="PUNDANA — an independent IMS566 student academic management project.">
+<title>Sign in | PUNDANA</title>
+<link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/demo-data.js" defer></script>
+<script src="assets/js/auth.js" defer>
+</script>
+<script src="assets/js/pages.js" defer>
+</script>
+<link rel="stylesheet" href="assets/css/lavender-theme.css">
+<script defer src="assets/js/lavender-theme.js">
+</script>
+</head>
+<body class="lavender-auth">
+<main class="auth-layout">
+<aside class="campus">
+<div class="campus-top">
+<span class="eyebrow">YOUR CAMPUS. YOUR JOURNEY.</span>
+<span class="location">Puncak Perdana, Selangor</span>
+</div>
+<div class="campus-copy">
+<span class="yellow-rule">
+</span>
+<h2>Your academic life,<br>
+<em>organised.</em>
+</h2>
+<p>A little clarity for every class, deadline<br>and milestone ahead.</p>
+<div class="campus-tags">
+<span>Plan with purpose</span>
+<span>Grow with confidence</span>
+</div>
+</div>
+<div class="photo-credit">UiTM Puncak Perdana · Photograph supplied by project owner</div>
+</aside>
+<section class="form-panel">
+<a class="brand" href="index.html">
+<span class="brand-icon">P<span>◆</span>
+</span>
+<span>PUNDANA<small>ACADEMIC MANAGEMENT SYSTEM</small>
+</span>
+</a>
+<div class="form-content">
+<span class="eyebrow purple">A FRESH START, EVERY DAY</span>
+<h1>Welcome back.</h1>
+<p class="intro">Sign in to make room for what matters.</p>
+<div id="feedback" role="status" aria-live="polite" hidden>
+</div>
+<form id="login-form">
+<div class="mb-4">
+<label for="identity" class="form-label">Student ID, email or demo ID</label>
+<input class="form-control" id="identity" name="identity" autocomplete="username" placeholder="e.g. 2026000001" required maxlength="254">
+</div>
+<div class="mb-3">
+<label for="password" class="form-label">Password</label>
+<div class="password-wrap">
+<input class="form-control" id="password" name="password" type="password" autocomplete="current-password" required minlength="8" maxlength="128">
+<button type="button" class="reveal" data-toggle="password" aria-controls="password" aria-pressed="false" aria-label="Show password">Show</button>
+</div>
+</div>
+<div class="form-check mb-4">
+<input class="form-check-input" type="checkbox" id="remember">
+<label class="form-check-label" for="remember">Keep me signed in on this browser</label>
+</div>
+<button class="btn btn-primary w-100" type="submit">Sign in <span aria-hidden="true">↗</span>
+</button>
+</form>
+<p class="switch">New to PUNDANA? <a href="register.html">Create an account</a>
+</p>
+<div class="demo-note">
+<span class="note-icon">i</span>
+<div>
+<strong>Your own space to get started</strong>
+<p>Lecturer demo — ID: <code>lecturer</code> · Password: <code>Pundana123</code>. The demo starts with preloaded academic records.</p>
+</div>
+</div>
+</div>
+<footer>IMS566 · Independent student project<br>Inspired by UiTM. Not an official UiTM system.</footer>
+</section>
+</main>
+</body>
+</html>
