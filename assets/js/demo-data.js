@@ -1,7 +1,7 @@
-/* Lecturer demo with the supplied English course list and real assignment records. */
+/* Supplied Semester 4 subjects, assignments and timetable. Grades and extra events are editable illustrative records. */
 window.PundanaDemoSnapshot = {
   "profile": {
-    "fullName": "PUNDANA Demo Student",
+    "fullName": "Lecturer",
     "programme": "Information Systems Management",
     "faculty": "Information Science",
     "currentSemester": "4"
@@ -64,7 +64,7 @@ window.PundanaDemoSnapshot = {
         "code": "TFC451",
         "name": "Introductory French (Level II)",
         "credits": 2,
-        "semester": "3"
+        "semester": "4"
       }
     ],
     "assignments": [
@@ -93,37 +93,109 @@ window.PundanaDemoSnapshot = {
     ],
     "classes": [
       {
-        "id": "c1",
-        "subjectId": "s4",
+        "id": "timetable-ims560",
+        "subjectId": "demo-course-ims560",
         "day": 1,
-        "start": "09:00",
+        "start": "08:00",
         "end": "11:00",
         "room": "Computer Lab 2"
       },
       {
-        "id": "c2",
+        "id": "timetable-ims566",
+        "subjectId": "s4",
+        "day": 1,
+        "start": "12:00",
+        "end": "16:00",
+        "room": "Computer Lab 3"
+      },
+      {
+        "id": "timetable-ims565",
         "subjectId": "s5",
+        "day": 2,
+        "start": "08:00",
+        "end": "11:00",
+        "room": "PTAR Lecture Room"
+      },
+      {
+        "id": "timetable-ims564",
+        "subjectId": "demo-course-ims564",
+        "day": 2,
+        "start": "11:00",
+        "end": "14:00",
+        "room": "Computer Lab 8"
+      },
+      {
+        "id": "timetable-tfc451",
+        "subjectId": "demo-course-tfc451",
+        "day": 3,
+        "start": "10:00",
+        "end": "12:00",
+        "room": "Lecture Room 60"
+      },
+      {
+        "id": "timetable-lcc501",
+        "subjectId": "demo-course-lcc501",
         "day": 3,
         "start": "14:00",
         "end": "16:00",
-        "room": "Seminar Room"
+        "room": "Computer Lab 3"
+      },
+      {
+        "id": "timetable-ctu554",
+        "subjectId": "demo-course-ctu554",
+        "day": 3,
+        "start": "16:00",
+        "end": "18:00",
+        "room": "Lecture Room 12"
+      },
+      {
+        "id": "timetable-ims563",
+        "subjectId": "demo-course-ims561",
+        "day": 5,
+        "start": "08:00",
+        "end": "11:00",
+        "room": "Info Tool Lab"
       }
     ],
     "grades": [
+      {
+        "subjectId": "demo-course-ctu554",
+        "grade": "A-"
+      },
+      {
+        "subjectId": "demo-course-ims560",
+        "grade": "B+"
+      },
+      {
+        "subjectId": "demo-course-ims561",
+        "grade": "A"
+      },
+      {
+        "subjectId": "demo-course-ims564",
+        "grade": "A-"
+      },
+      {
+        "subjectId": "s5",
+        "grade": "B+"
+      },
       {
         "subjectId": "s4",
         "grade": "A"
       },
       {
-        "subjectId": "s5",
+        "subjectId": "demo-course-lcc501",
+        "grade": "B"
+      },
+      {
+        "subjectId": "demo-course-tfc451",
         "grade": "B+"
       }
     ],
     "histories": [
       {
         "semester": "4",
-        "previousCGPA": 3.33,
-        "previousCredits": 3
+        "previousCGPA": 3.4,
+        "previousCredits": 60
       }
     ],
     "events": [
@@ -134,9 +206,28 @@ window.PundanaDemoSnapshot = {
         "type": "presentation",
         "time": "10:00",
         "notes": "Present the completed academic workspace."
+      },
+      {
+        "id": "starter-quiz",
+        "title": "Sample database quiz",
+        "date": "2026-11-24",
+        "type": "quiz",
+        "time": "09:00",
+        "notes": "Illustrative event for testing. Edit or delete this entry."
+      },
+      {
+        "id": "starter-exam",
+        "title": "Sample revision and examination",
+        "date": "2026-11-30",
+        "type": "exam",
+        "time": "10:00",
+        "notes": "Illustrative event, not an official university examination date."
       }
     ],
     "demoCourseRevision": "real-course-list-2026-11-19-ims566-lecturer",
-    "demoAssignmentRevision": "real-assignments-2026-11-19-confirmed"
+    "demoAssignmentRevision": "real-assignments-2026-11-19-confirmed",
+    "starterContentRevision": "editable-starter-2026-11-19",
+    "timetableRevision": "supplied-timetable-2026-11-19",
+    "semesterFocusRevision": "semester-4-only-v1"
   }
 };

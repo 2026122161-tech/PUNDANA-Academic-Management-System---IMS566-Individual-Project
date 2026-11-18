@@ -2,7 +2,7 @@
 window.PundanaAuth = (() => {
   'use strict';
   const USERS = 'pundana.users.v1', SESSION = 'pundana.session.v1';
-  const DEMO_ID = 'lecturer-demo', DEMO_LOGIN = 'lecturer', DEMO_EMAIL = 'lecturer-demo@example.invalid';
+  const DEMO_ID = 'lecturer-demo', DEMO_LOGIN = 'Lecturer', DEMO_EMAIL = 'lecturer.demo@gmail.com';
   const normal = value => String(value).trim().toLowerCase();
   const readUsers = () => { const value = JSON.parse(localStorage.getItem(USERS) || '[]'); if (!Array.isArray(value)) throw new Error('Account storage is invalid. Reset site data to start again.'); return value; };
   const hex = bytes => Array.from(bytes, b => b.toString(16).padStart(2, '0')).join('');
@@ -97,7 +97,7 @@ window.PundanaAuth = (() => {
     const identifier = normal(identity);
     let user;
     const lecturerAccount = readUsers().find(entry => entry.id === DEMO_ID);
-    if (identifier === DEMO_LOGIN || (lecturerAccount ? identifier === normal(lecturerAccount.email) : identifier === DEMO_EMAIL)) {
+    if (identifier === normal(DEMO_LOGIN) || (lecturerAccount ? identifier === normal(lecturerAccount.email) : identifier === DEMO_EMAIL)) {
       // Public demonstration credentials. Academic records are seeded only once.
       if (password !== 'Pundana123') throw new Error('Student ID/email or password is incorrect.');
       const snapshot = window.PundanaDemoSnapshot;
@@ -108,6 +108,46 @@ window.PundanaAuth = (() => {
       const academicKey = 'pundana.academics.v1.' + DEMO_ID;
       if (localStorage.getItem(academicKey) === null) seedDemoAcademics(academicKey, snapshot.academics);
       if (user === account) localStorage.setItem(USERS, JSON.stringify([...users, account]));
+      else if (!user.lecturerIdentityRevision) {
+        // Apply requested identity once; later profile edits remain editable.
+        user = {...user, studentId:DEMO_LOGIN, email:DEMO_EMAIL, lecturerIdentityRevision:1};
+        if (['PUNDANA Demo Student','PUNDANA Demo','Lecturer Demo'].includes(user.fullName)) user.fullName='Lecturer';
+        localStorage.setItem(USERS, JSON.stringify(users.map(entry=>entry.id===DEMO_ID?user:entry)));
+      }
+      if (user === account) {
+        user.lecturerIdentityRevision=1;
+        localStorage.setItem(USERS, JSON.stringify([...users,user]));
+      }
+      const existingData=JSON.parse(localStorage.getItem(academicKey));
+      if (!existingData.starterContentRevision) {
+        // Fill empty pages once without replacing edited or deleted records on later logins.
+        for (const collection of ['classes','grades','histories','events']) {
+          if (!Array.isArray(existingData[collection]) || existingData[collection].length===0) {
+            existingData[collection]=JSON.parse(JSON.stringify(snapshot.academics[collection]));
+          }
+        }
+        existingData.starterContentRevision=snapshot.academics.starterContentRevision;
+        localStorage.setItem(academicKey,JSON.stringify(existingData));
+      }
+      if (existingData.semesterFocusRevision !== snapshot.academics.semesterFocusRevision) {
+        // Move the supplied French subject once, preserving linked classes and grades.
+        for (const subject of existingData.subjects) {
+          if (subject.code==='TFC451' && String(subject.semester)==='3') subject.semester='4';
+        }
+        existingData.semesterFocusRevision=snapshot.academics.semesterFocusRevision;
+        localStorage.setItem(academicKey,JSON.stringify(existingData));
+      }
+      if (existingData.timetableRevision !== snapshot.academics.timetableRevision) {
+        // Install the requested timetable once; subsequent timetable edits stay saved.
+        existingData.classes=snapshot.academics.classes.map(session=>{
+          const sourceSubject=snapshot.academics.subjects.find(subject=>subject.id===session.subjectId);
+          const savedSubject=existingData.subjects.find(subject=>subject.code===sourceSubject.code);
+          if (!savedSubject) throw Error('Add subject '+sourceSubject.code+' before applying the timetable update.');
+          return {...session,subjectId:savedSubject.id};
+        });
+        existingData.timetableRevision=snapshot.academics.timetableRevision;
+        localStorage.setItem(academicKey,JSON.stringify(existingData));
+      }
     } else {
       user = readUsers().find(entry => entry.studentId === identifier || normal(entry.email) === identifier);
       if (!user || user.id === DEMO_ID || await digest(password, user.salt) !== user.passwordHash) {
